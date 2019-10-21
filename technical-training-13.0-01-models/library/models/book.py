@@ -6,5 +6,5 @@ class Book(models.Model):
     name = fields.Text(required=True)
     isbn = fields.Text(required=True)
     edition_date = fields.Date()
-    rented_by = fields.One2Many("library.customer", "book_id")
+    rented_by = fields.One2many("library.customer", "book_id")
     
